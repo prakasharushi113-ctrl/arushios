@@ -101,6 +101,26 @@ function setupWindow(config) {
     const restoreHeight =
         config.height || "480px";
 
+    /* ====================================
+       RESPONSIVE SIZE HELPERS
+       (new — on a normal desktop viewport
+       these resolve to the exact same
+       restoreWidth/restoreHeight as
+       before; on a small screen the
+       vw/vh side of min() wins instead,
+       so the window shrinks to fit
+       without ever needing a resize
+       listener — min() recalculates live)
+    ==================================== */
+
+    function responsiveWidth() {
+        return "min(94vw, " + restoreWidth + ")";
+    }
+
+    function responsiveHeight() {
+        return "min(78vh, " + restoreHeight + ")";
+    }
+
 
     let isDragging = false;
 
@@ -126,8 +146,8 @@ function setupWindow(config) {
 
         if (!isMaximized) {
 
-            windowEl.style.width = restoreWidth;
-            windowEl.style.height = restoreHeight;
+            windowEl.style.width = responsiveWidth();
+            windowEl.style.height = responsiveHeight();
 
         }
 
@@ -155,10 +175,13 @@ function setupWindow(config) {
             const desktopRect =
                 desktop.getBoundingClientRect();
 
+            const isSmallScreen =
+                window.innerWidth <= 700;
+
             let x =
                 (desktopRect.width - rect.width) / 2;
 
-            let y = 60;
+            let y = isSmallScreen ? 14 : 60;
 
             windowEl.style.left = x + "px";
             windowEl.style.top = y + "px";
@@ -317,8 +340,8 @@ function setupWindow(config) {
 
             isMaximized = false;
 
-            windowEl.style.width = restoreWidth;
-            windowEl.style.height = restoreHeight;
+            windowEl.style.width = responsiveWidth();
+            windowEl.style.height = responsiveHeight();
 
             windowEl.style.left = "50%";
             windowEl.style.top = "60px";
@@ -357,8 +380,8 @@ function setupWindow(config) {
 
             else {
 
-                windowEl.style.width = restoreWidth;
-                windowEl.style.height = restoreHeight;
+                windowEl.style.width = responsiveWidth();
+                windowEl.style.height = responsiveHeight();
 
                 windowEl.style.left = "50%";
                 windowEl.style.top = "60px";

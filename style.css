@@ -51,7 +51,7 @@ body {
     height: 100vh;
 
     background-image:
-        url("wallypaper 2.jpg");
+        url("wallypaper 6.jpg");
 
     background-size: cover;
 
@@ -1910,13 +1910,201 @@ body {
 
 /* ========================================================================
    RESPONSIVENESS
-   (keeps the start menu and dialogs
-   inside the viewport on small screens —
-   does not touch the existing desktop
-   layout rules above)
+   (new — every rule below only fires
+   under the max-width breakpoints, so
+   nothing here touches the existing
+   desktop layout, wallpaper, windows,
+   icons, fonts, or colors above)
 ======================================================================== */
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
+
+    /* safety net: if a device is short
+       enough that the icon stack below
+       still runs past the fold, this
+       lets a person scroll to reach it
+       instead of it being stranded
+       under the fixed overflow:hidden */
+    .desktop {
+        overflow-y: auto;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    /* ------------------------------------
+       DESKTOP ICONS
+       (same icons, same images — just
+       smaller and re-stacked so they
+       fit a phone-width screen without
+       overlapping)
+    ------------------------------------ */
+
+    .desktop-icon img {
+        width: 92px;
+        height: 92px;
+    }
+
+    .desktop-icon {
+        width: 92px;
+    }
+
+    .icon-name {
+        width: 92px;
+
+        font-size: 9px;
+    }
+
+    .about-icon {
+        top: 16px;
+        left: 16px;
+    }
+
+    .projects-icon {
+        top: 168px;
+        left: 16px;
+    }
+
+    .camera-icon {
+        top: 16px;
+        left: 122px;
+    }
+
+    .camera-icon img {
+        height: 92px;
+    }
+
+    .skills-icon {
+        top: 320px;
+        left: 12px;
+
+        width: 120px;
+    }
+
+    .skills-icon img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skills-icon .icon-name {
+        width: 120px;
+
+        font-size: 9px;
+    }
+
+    .contact-icon {
+        top: 494px;
+        left: 12px;
+
+        width: 120px;
+    }
+
+    .contact-icon img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contact-icon .icon-name {
+        width: 120px;
+
+        font-size: 9px;
+    }
+
+
+    /* ------------------------------------
+       TASKBAR
+       (same bar, same clock — buttons
+       just get a bit narrower so more
+       of the row is visible before the
+       horizontal scroll kicks in)
+    ------------------------------------ */
+
+    .taskbar-content {
+        gap: 10px;
+
+        padding-left: 10px;
+    }
+
+    .start-button {
+        width: 92px;
+
+        font-size: 10px;
+    }
+
+    .task-window-button {
+        width: 132px;
+
+        padding: 0 8px;
+
+        font-size: 9px;
+    }
+
+    .taskbar-clock {
+        padding: 0 12px;
+
+        font-size: 10px;
+    }
+
+
+    /* ------------------------------------
+       WINDOW CONTENT
+       (same chrome, tighter padding and
+       slightly smaller type so windows
+       stay readable at ~90vw)
+    ------------------------------------ */
+
+    .window-content {
+        padding: 16px;
+    }
+
+    .title-text {
+        font-size: 12px;
+    }
+
+    .content-text {
+        font-size: 11px;
+    }
+
+    .file-grid {
+        flex-wrap: wrap;
+
+        gap: 16px;
+    }
+
+    .file-icon {
+        width: 110px;
+    }
+
+    .file-icon img {
+        width: 88px;
+        height: 88px;
+    }
+
+    .file-name {
+        font-size: 9px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    /* extra-narrow phones only: the
+       terminal prompt + input can get
+       tight, so trim their type a hair
+       further */
+    .terminal-output,
+    .terminal-prompt,
+    .terminal-input,
+    .terminal-cursor {
+        font-size: 10px;
+    }
+
+    .skill-row {
+        flex-wrap: wrap;
+
+        row-gap: 6px;
+    }
 
     .start-menu {
         left: 10px;
