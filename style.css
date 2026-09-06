@@ -51,7 +51,7 @@ body {
     height: 100vh;
 
     background-image:
-        url("wallypaper 6.jpg");
+        url("wallypaper 2.jpg");
 
     background-size: cover;
 
@@ -2112,37 +2112,4 @@ body {
         width: calc(100vw - 20px);
     }
 
-}
-@media (max-width: 420px) {
-
-    .terminal-output,
-    .terminal-prompt,
-    .terminal-input,
-    .terminal-cursor {
-        font-size: 10px;
-    }
-
-    .skill-row {
-        flex-wrap: wrap;
-        row-gap: 6px;
-    }
-
-    .start-menu {
-        left: 10px;
-        width: calc(100vw - 20px);
-    }
-
-}
-
-
-/* MOBILE WALLPAPER FIX */
-@media (max-width: 700px) {
-    .desktop {
-        min-height: 100dvh;
-        height: 100dvh;
-        background-image: url("wallypaper 2.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
 }
