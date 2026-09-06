@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ArushiOS</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="style.css?v=16">
+</head>
+
+<body>
+
+    <main class="desktop">
+
+        <!-- ==============================
+             ABOUT ME WINDOW
+        =============================== -->
+
+        <div class="about-window" id="aboutWindow">
+
+            <!-- TITLE BAR -->
+            <div class="title-bar">
+
+                <div class="title-text">
+                    ABOUT ME
+                </div>
+
+                <div class="window-controls">
+
+                    <button
+                        class="window-btn"
+                        data-action="minimize"
+                        type="button"
+                        aria-label="Minimize">
+                        —
+                    </button>
+
+                    <button
+                        class="window-btn"
+                        data-action="maximize"
+                        type="button"
+                        aria-label="Maximize">
+                        □
+                    </button>
+
+                    <button
+                        class="window-btn"
+                        data-action="close"
+                        type="button"
+                        aria-label="Close">
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- WINDOW CONTENT -->
+
+            <div class="window-content">
+
+                <div class="content-text">
+
+                    <p>
+                        HELLO!! I’m Arushi Prakash from Kolkata, West Bengal. I’m a 3rd year
+                        Electrical Engineering student
+                        at Central University of Jharkhand, Ranchi.
+                    </p>
+
+                    <p>
+                        I’m a very big fan of Y2K and Retro tech.
+                    </p>
+
+                    <p>
+                        I also fw web development and web design but
+                        my main niche is
+                        <span class="iot">Internet Of Things(IoT)</span>
+                        and
+                        <span class="ml">Machine Learning(ML).</span>
+                    </p>
+
+                    <p>
+                        Some of my current projects are around
+                        developing
+                        <span class="retro">retro games</span>
+                        using a
+                        <span class="display-module">display module</span>
+                        and
+                        <span class="esp32">ESP32</span>
+                        and also an
+                        <span class="ai">AI based desk companion</span>
+                        using the same. I've also built an
+                        <span class="iot">IoT</span>
+                        and
+                        <span class="ml">ML</span>
+                        based smart agriculture system for real-time crop health monitoring.
+                    </p>
+
+                    <p>
+                        Outside of tech, I love writing, and I also dabble in
+                        <span class="retro">pixel art</span>
+                        and basic
+                        <span class="ml">MATLAB / Simulink</span>
+                        modeling.
+                    </p>
+
+                    <p>
+                        To checkout more of my projects you can just
+                        access the "my projects" folder!
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             MY PROJECTS WINDOW
+        =============================== -->
+
+        <div class="about-window" id="projectsWindow">
+
+            <!-- TITLE BAR -->
+            <div class="title-bar">
+
+                <div class="title-text">
+                    MY PROJECTS
+                </div>
+
+                <div class="window-controls">
+
+                    <button
+                        class="window-btn"
+                        data-action="minimize"
+                        type="button"
+                        aria-label="Minimize">
+                        —
+                    </button>
+
+                    <button
+                        class="window-btn"
+                        data-action="maximize"
+                        type="button"
+                        aria-label="Maximize">
+                        □
+                    </button>
+
+                    <button
+                        class="window-btn"
+                        data-action="close"
+                        type="button"
+                        aria-label="Close">
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- WINDOW CONTENT -->
+
+            <div class="window-content">
+
+                <div class="file-grid">
+
+                    <div class="file-icon" id="retroFile">
+                        <img src="file 2.png" alt="Retro Games">
+                        <div class="file-name">RETRO GAMES</div>
+                    </div>
+
+                    <div class="file-icon" id="deskFile">
+                        <img src="file 2.png" alt="Desk Companion">
+                        <div class="file-name">DESK COMPANION</div>
+                    </div>
+
+                    <div class="file-icon" id="agriFile">
+                        <img src="file 2.png" alt="Smart Agriculture">
+                        <div class="file-name">SMART AGRICULTURE</div>
+                    </div>
+
+                    <div class="file-icon" id="othersFile">
+                        <img src="file 2.png" alt="Others">
+                        <div class="file-name">OTHERS</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             RETRO GAMES FOLDER WINDOW
+        =============================== -->
+
+        <div class="about-window" id="retroWindow">
+
+            <div class="title-bar">
+
+                <div class="title-text">
+                    RETRO GAMES
+                </div>
+
+                <div class="window-controls">
+
+                    <button class="window-btn" data-action="minimize" type="button" aria-label="Minimize">—</button>
+                    <button class="window-btn" data-action="maximize" type="button" aria-label="Maximize">□</button>
+                    <button class="window-btn" data-action="close" type="button" aria-label="Close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <div class="file-grid">
+
+                    <div class="file-icon" id="aeroFile">
+                        <img src="file 2.png" alt="Aero Flappy">
+                        <div class="file-name">AERO FLAPPY</div>
+                    </div>
+
+                    <div class="file-icon" id="bubblegumFile">
+                        <img src="file 2.png" alt="Bubblegum Bitch Run">
+                        <div class="file-name">BUBBLEGUM BITCH RUN</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             AERO FLAPPY DETAIL WINDOW
+        =============================== -->
+
+        <div class="about-window" id="aeroWindow">
+
+            <div class="title-bar">
+
+                <div class="title-text">
+                    AERO FLAPPY
+                </div>
+
+                <div class="window-controls">
+
+                    <button class="window-btn" data-action="minimize" type="button" aria-label="Minimize">—</button>
+                    <button class="window-btn" data-action="maximize" type="button" aria-label="Maximize">□</button>
+                    <button class="window-btn" data-action="close" type="button" aria-label="Close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <div class="content-text">
+
+                    <p>
+                        Aero Flappy is a custom 2D Flappy Bird-style game built to run on an
+                        <span class="esp32">ESP32</span>
+                        with a 320×240 ILI9341 display. It combines a playable arcade game with
+                        a custom Frutiger Aero-style desktop interface — the game runs inside an
+                        Aero PC window, where you guide a small cat character through moving
+                        poles while avoiding collisions. The aim was a complete game experience
+                        on an embedded microcontroller rather than a regular PC or Raspberry Pi.
+                    </p>
+
+                    <p>
+                        <strong>Hardware:</strong> ESP32 Dev Module as the main controller
+                        (running the game and handling GPIO input plus display control), an
+                        ILI9341 320×240 TFT for the Aero desktop, game window, character, poles,
+                        score, and Game Over screen, and three physical buttons — GPIO 27 for
+                        Flap, GPIO 26 for Start/Restart, GPIO 25 for Pause/Resume. Display wiring
+                        is CS on GPIO 5, DC on GPIO 15, RST on GPIO 4, all over SPI.
+                    </p>
+
+                    <p>
+                        <strong>Software:</strong> written in C/C++ using the Arduino IDE, on the
+                        ESP32 Arduino platform. Display and drawing runs through the Adafruit
+                        ILI9341 and Adafruit GFX libraries, with custom bitmap header files —
+                        Aero_pc.h, catty.h, pole.h, and two Game Over headers — holding all the
+                        artwork.
+                    </p>
+
+                    <p>
+                        <strong>How it works:</strong> the ESP32 drives the game state and talks
+                        to the display over SPI. On boot, the Aero PC desktop shows first;
+                        pressing Start begins the game, with the cat sitting still until the
+                        first flap. Gravity constantly pulls the cat's vertical velocity down,
+                        while Flap gives it an upward kick. Poles scroll right to left, and
+                        clearing one increases the score. The game checks the cat against both
+                        the poles and the window boundaries — a hit triggers the Game Over
+                        overlay, and Pause simply freezes gameplay updates until pressed again.
+                    </p>
+
+                    <ul>
+                        <li>Custom Frutiger Aero desktop and Aero PC game window</li>
+                        <li>Flappy Bird-style gameplay with custom cat and pole graphics</li>
+                        <li>Flap, Start/Restart, and Pause/Resume controls</li>
+                        <li>Score tracking with pipe speed that increases gradually</li>
+                        <li>Gravity, flap physics, and collision detection</li>
+                        <li>Buffered (RAM-composed) rendering to cut down on display flicker</li>
+                        <li>Custom Game Over window layered over the Aero PC interface</li>
+                    </ul>
+
+                    <p>
+                        <strong>Technical details:</strong> 320×240 resolution on an ILI9341
+                        controller over SPI, using RGB565 bitmap graphics. Frames are composed
+                        in RAM buffers before being sent to the display to reduce visible
+                        flicker. Pipe speed starts low and ramps up with score, capped at a
+                        maximum, and collision detection compares the cat's hit area against
+                        both poles and window boundaries.
+                    </p>
+
+                    <p>
+                        <strong>My custom work:</strong> I designed the Aero PC interface, the
+                        Catty character artwork, the pole artwork, and the Game Over screens
+                        myself, then prepared all the bitmap graphics as header files for the
+                        ESP32. The game software itself — physics, scoring, pipe movement,
+                        collision detection, button controls, pause behavior, Game Over
+                        behavior, and the buffered rendering fix for flicker — was also built
+                        specifically for this project.
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong> assembled and tested on real hardware — the
+                        Aero desktop, game window, and Catty/pole graphics are all working on
+                        the ESP32 display. Controls (Start/Restart, Flap, Pause/Resume) are in
+                        place, and gameplay has been tuned by adjusting jump strength, pipe
+                        speed, spacing, gap size, and difficulty ramp. The Game Over screen has
+                        been tested on hardware and is being refined to render cleanly as a
+                        smaller overlay window without leaving artifacts — currently a working
+                        prototype in the refinement stage.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             BUBBLEGUM BITCH RUN DETAIL WINDOW
+        =============================== -->
+
+        <div class="about-window" id="bubblegumWindow">
+
+            <div class="title-bar">
+
+                <div class="title-text">
+                    BUBBLEGUM BITCH RUN
+                </div>
+
+                <div class="window-controls">
+
+                    <button class="window-btn" data-action="minimize" type="button" aria-label="Minimize">—</button>
+                    <button class="window-btn" data-action="maximize" type="button" aria-label="Maximize">□</button>
+                    <button class="window-btn" data-action="close" type="button" aria-label="Close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <div class="content-text">
+
+                    <p>
+                        Bubblegum Bitch Run is a custom 2D running game for an
+                        <span class="esp32">ESP32</span>
+                        and a 2.8" ILI9341 TFT display. You run through a scrolling world,
+                        dodge an Anti-Hero chasing from behind, collect coins, and manage a
+                        limited number of lives — built as a full interactive system rather than
+                        just a display demo.
+                    </p>
+
+                    <p>
+                        <strong>Hardware:</strong> ESP32-D0WD-V3 dev board as the main
+                        controller, a 2.8" ILI9341 TFT over SPI for backgrounds, characters,
+                        menus, coins, lives, and attack graphics, two push buttons — GPIO 27 for
+                        fast run/dodge and GPIO 26 for normal run — and a buzzer, tested
+                        separately on an Arduino Uno as a first step toward sound effects.
+                    </p>
+
+                    <p>
+                        <strong>Software:</strong> C++ via the Arduino IDE, using the Adafruit
+                        GFX and Adafruit ILI9341 libraries for graphics and display control, over
+                        SPI. Every sprite — backgrounds, player frames, Anti-Hero, coins, lives,
+                        attack graphics, effects, and the intro image — is stored as custom
+                        bitmap/header C/C++ data.
+                    </p>
+
+                    <p>
+                        <strong>How it works:</strong> the ESP32 continuously reads the two
+                        buttons and updates the player's movement and animation state. The
+                        player's position is tracked in world coordinates while a separate
+                        camera position decides what part of the world is visible on the TFT.
+                        Backgrounds are stored as bitmap data, and each frame the program picks
+                        the right background section for the current world position and
+                        combines it with coins, the Anti-Hero, the player, life indicators,
+                        attack effects, and the score. The Anti-Hero constantly moves toward a
+                        point just behind the player, and once it's close enough it can trigger
+                        an attack — fast-running doubles as the dodge mechanic during that
+                        window.
+                    </p>
+
+                    <ul>
+                        <li>Custom intro/title and start-game screens</li>
+                        <li>Running player animation with normal/fast movement</li>
+                        <li>Anti-Hero chase AI with flying/idle behavior and a dedicated attack pose</li>
+                        <li>Diagonal attack effect aimed at the player</li>
+                        <li>Three-life heart system and a coin collection/scoring system</li>
+                        <li>Multiple backgrounds stitched into one scrolling world</li>
+                        <li>Game-over and restart flow</li>
+                        <li>Chunk-based rendering to cut down on TFT flicker</li>
+                    </ul>
+
+                    <p>
+                        <strong>Technical details:</strong> 320×240 resolution on an ILI9341
+                        controller over SPI, using RGB565 bitmaps with separate transparency
+                        masks for sprites. Rendering builds the screen in 40-pixel-high chunks
+                        inside a 320×40 RGB565 buffer before sending each chunk to the display.
+                        Animation uses timed, state-based frame switching, collision detection
+                        is simple rectangular overlap (for both coins and attacks), and inputs
+                        are digital GPIO with internal pull-up resistors.
+                    </p>
+
+                    <p>
+                        <strong>My custom work:</strong> I designed and programmed the full game
+                        logic and structure, built the player movement/animation system, the
+                        Anti-Hero following behavior, and the attack/dodge/life mechanics from
+                        scratch, plus coin placement/collection/scoring, the world/camera
+                        system, and the chunk-based renderer specifically built to solve TFT
+                        flicker. I also created and integrated every bitmap asset — characters,
+                        backgrounds, UI elements, attacks, effects, coins, lives — and designed
+                        the intro, start-game, and game-over screens.
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong> playable prototype — the TFT display, character
+                        movement and running animation, multiple backgrounds, Anti-Hero
+                        following, coin collection, score display, intro/start screens, and the
+                        basic three-life and attack systems are all implemented and tested.
+                        Current focus is refining the Anti-Hero's attack/dodge timing — making
+                        the attack effect travel correctly toward the player and making fast
+                        running a genuine reaction-based dodge rather than permanent
+                        protection. The buzzer and additional sound effects are being explored
+                        separately.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             DESK COMPANION DETAIL WINDOW
+        =============================== -->
+
+        <div class="about-window" id="deskWindow">
+
+            <div class="title-bar">
+
+                <div class="title-text">
+                    DESK COMPANION
+                </div>
+
+                <div class="window-controls">
+
+                    <button class="window-btn" data-action="minimize" type="button" aria-label="Minimize">—</button>
+                    <button class="window-btn" data-action="maximize" type="button" aria-label="Maximize">□</button>
+                    <button class="window-btn" data-action="close" type="button" aria-label="Close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <div class="content-text">
+
+                    <p>
+                        Tara is a custom-built physical
+                        <span class="ai">AI companion</span>
+                        combining AI, Python, embedded electronics, display graphics, voice
+                        interaction, and gaming — the goal is an AI character that exists as a
+                        real physical device rather than just a chatbot on a screen.
+                    </p>
+
+                    <p>
+                        <strong>Hardware:</strong>
+                        <span class="esp32">ESP32</span>
+                        as the main microcontroller for the physical interface and game, a 2.8"
+                        ILI9341 TFT display for Tara's face and game graphics, two push buttons
+                        (one for reset/game-select/start, one for pause/resume), a
+                        potentiometer planned as the controller for the in-built Space Shooter,
+                        a speaker for Tara's spoken responses, and custom rocket/alien artwork
+                        made specifically for the game.
+                    </p>
+
+                    <p>
+                        <strong>Software:</strong> Python runs Tara's main backend — AI
+                        interaction, memory, web search, weather lookups, speech, and serial
+                        communication with the ESP32. The ESP32 side is written in C++ via the
+                        Arduino IDE, handling the TFT and game hardware. A database stores
+                        Tara's long-term memory, and a custom Python bitmap converter was built
+                        from scratch to turn PNG sprites into Arduino-compatible RGB565 bitmap
+                        data with transparency masks.
+                    </p>
+
+                    <p>
+                        <strong>AI features:</strong> Tara can hold normal conversations while
+                        keeping context, and has a memory system that stores and recalls
+                        important information later. The backend handles everyday conversation,
+                        web searches, weather info, memory-related requests, and voice
+                        responses.
+                    </p>
+
+                    <p>
+                        <strong>Expressions &amp; display:</strong> the TFT acts as Tara's face
+                        and interface, with expressions including idle, happy, angry, crying,
+                        and thinking/looking — her expression shifts depending on the
+                        conversation, while responses are shown on-screen. The Python backend
+                        talks to the ESP32 over serial commands.
+                    </p>
+
+                    <p>
+                        <strong>Space Shooter game:</strong> a game being built directly into
+                        Tara, featuring a custom rocket, alien enemies, bullets, rocket movement
+                        via the potentiometer, collision detection, scoring, and pause/resume.
+                        Button 1 resets Tara's text, selects the game, and starts it; Button 2
+                        pauses/resumes; the potentiometer steers the rocket.
+                    </p>
+
+                    <p>
+                        <strong>Custom graphics pipeline:</strong> instead of an existing
+                        image-conversion library, I built a custom Python converter for the game
+                        graphics — it processes the raw PNG artwork, handles the background,
+                        converts pixels to RGB565, generates a transparency mask, and outputs a
+                        `.h` file ready to include directly in the ESP32/Arduino project.
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong> the core Tara system — TFT communication,
+                        expressions, memory, and the Python backend — is up and running, and a
+                        basic shooter concept has already been tested on an Arduino Uno. Current
+                        focus is porting the full game onto the ESP32 and integrating the
+                        rocket, aliens, bullets, controls, collision detection, and scoring into
+                        Tara's existing system.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             SMART AGRICULTURE DETAIL WINDOW
+        =============================== -->
+
+        <div class="about-window" id="agriWindow">
+
+            <div class="title-bar">
+
+                <div class="title-text">
+                    SMART AGRICULTURE
+                </div>
+
+                <div class="window-controls">
+
+                    <button class="window-btn" data-action="minimize" type="button" aria-label="Minimize">—</button>
+                    <button class="window-btn" data-action="maximize" type="button" aria-label="Maximize">□</button>
+                    <button class="window-btn" data-action="close" type="button" aria-label="Close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <div class="content-text">
+
+                    <p>
+                        An
+                        <span class="iot">IoT</span>
+                        and
+                        <span class="ml">machine-learning</span>
+                        based smart agriculture system for real-time monitoring of environmental
+                        and soil conditions, built to catch crop problems early instead of relying
+                        on slow, symptom-only manual inspection. Built as a team project — my
+                        individual work covered the Node.js backend, the React website, the data
+                        visualizations, and the complete ML pipeline.
+                    </p>
+
+                    <p>
+                        <strong>Hardware:</strong> Raspberry Pi 4 as the main controller and
+                        processing unit, a DHT22 sensor for air temperature/humidity wired
+                        directly over GPIO, an integrated soil sensor reading moisture,
+                        temperature, pH, electrical conductivity, and nitrogen/phosphorus/
+                        potassium, and a USB-to-RS-485 adapter bridging the soil sensor to the
+                        Pi.
+                    </p>
+
+                    <p>
+                        <strong>Software:</strong> React for the web dashboard, a Node.js backend
+                        I built myself, Firebase as the live cloud database for streaming sensor
+                        readings, and four ML classifiers compared against each other — Random
+                        Forest, Decision Tree, KNN, and SVM.
+                    </p>
+
+                    <p>
+                        <strong>How it works:</strong> the DHT22 and soil sensor periodically
+                        collect readings — the DHT22 over GPIO, the soil sensor over RS-485. The
+                        Raspberry Pi reads both and pushes the data to Firebase, which stores and
+                        streams it live. The React site pulls from Firebase to show real-time
+                        readings and graphs. For prediction, historical sensor data was used to
+                        train supervised classifiers, and the trained model now takes live
+                        Firebase values and predicts the current crop state on the fly.
+                    </p>
+
+                    <ul>
+                        <li>Continuous air and soil condition monitoring</li>
+                        <li>Live sensor dashboard with historical trend graphs and out-of-range alerts</li>
+                        <li>Real-time crop-state prediction from live sensor data</li>
+                        <li>Classifies into Healthy, Nutrient Deficiency, Powdery Mildew, or Salt Stress</li>
+                    </ul>
+
+                    <p>
+                        <strong>Technical details:</strong> the ML model takes 9 input
+                        parameters — air temperature, air humidity, soil moisture, soil
+                        temperature, soil pH, EC, nitrogen, phosphorus, and potassium. Missing
+                        values were handled with mean imputation, and the dataset was split
+                        80/20 train/test with a fixed random state of 42.
+                    </p>
+
+                    <ul>
+                        <li>Random Forest — 99.33% accuracy, 0.99 precision/recall/F1</li>
+                        <li>Decision Tree — 99.33% accuracy, 0.99 precision/recall/F1</li>
+                        <li>KNN — 96.67% accuracy, 0.97 precision/recall/F1</li>
+                        <li>SVM — 62.67% accuracy, 0.82 precision, 0.63 recall, 0.69 F1</li>
+                    </ul>
+
+                    <p>
+                        Random Forest was selected as the final predictor, correctly classifying
+                        298 of 300 test samples (99.33% accuracy).
+                    </p>
+
+                    <p>
+                        <strong>My custom work:</strong> I designed and built the Node.js backend
+                        from scratch, built the entire React dashboard, created all the sensor
+                        graphs and visualizations (including low/optimal/high range indicators),
+                        and handled the complete ML pipeline — data prep, preprocessing, training
+                        and comparing all four classifiers, evaluation, final model selection, and
+                        wiring it up to live sensor data.
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong> fully working end-to-end — sensor collection,
+                        Firebase streaming, the dashboard, and real-time ML prediction have all
+                        been demonstrated successfully. Planned future work includes adding a
+                        camera module, multiple sensor nodes, sensor drift calibration,
+                        mobile/SMS alerts, and expanding the dataset to more crops and diseases.
+                    </p>
+
+                    <p>
+                        A research paper based on this project — <em>IoT and ML-Based Smart
+                        Agriculture with Real-Time Plant Disease Monitoring</em> — has been
+                        submitted to the IEEE Silchar Conference 2026.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             OTHERS DETAIL WINDOW
+        =============================== -->
+
+        <div class="about-window" id="othersWindow">
+
+            <div class="title-bar">
+
+                <div class="title-text">
+                    OTHERS
+                </div>
+
+                <div class="window-controls">
+
+                    <button class="window-btn" data-action="minimize" type="button" aria-label="Minimize">—</button>
+                    <button class="window-btn" data-action="maximize" type="button" aria-label="Maximize">□</button>
+                    <button class="window-btn" data-action="close" type="button" aria-label="Close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <div class="content-text">
+
+                    <p>
+                        A few smaller projects and builds outside the main portfolio pieces —
+                        mostly embedded systems and Android work done alongside coursework.
+                    </p>
+
+                    <p>
+                        <strong>RFID Smart Attendance System</strong> — an Arduino-based
+                        automated attendance system using RFID technology, cutting down manual
+                        intervention and improving accuracy.
+                    </p>
+
+                    <p>
+                        <strong>Attendance Management Mobile App</strong> — an Android app built
+                        in Kotlin, integrated with Firebase Realtime Database for real-time
+                        attendance tracking and data management. Paired with the RFID system
+                        above.
+                    </p>
+
+                    <p>
+                        <strong>Arduino-Based Oscilloscope</strong> — a low-cost system for
+                        basic signal visualization and waveform analysis using Arduino.
+                    </p>
+
+                    <p>
+                        <strong>Digital Logic Gate Lock System</strong> — a security mechanism
+                        built from combinational logic circuits, a practical application of
+                        Boolean logic.
+                    </p>
+
+                    <p>
+                        <strong>IR Sensor-Based Speedometer</strong> — a sensor-based system for
+                        real-time speed measurement using IR technology.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             CONTACT ME WINDOW
+        =============================== -->
+
+        <div class="about-window" id="contactWindow">
+
+            <div class="title-bar">
+
+                <div class="title-text">
+                    CONTACT ME
+                </div>
+
+                <div class="window-controls">
+
+                    <button class="window-btn" data-action="minimize" type="button" aria-label="Minimize">—</button>
+                    <button class="window-btn" data-action="maximize" type="button" aria-label="Maximize">□</button>
+                    <button class="window-btn" data-action="close" type="button" aria-label="Close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <div class="contact-links">
+
+                    <a class="contact-link" href="https://instagram.com/yourhandle" target="_blank" rel="noopener">
+
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="#000000" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="5" fill="none" stroke="#000000" stroke-width="2"/>
+                            <circle cx="17.5" cy="6.5" r="1.4" fill="#000000"/>
+                        </svg>
+
+                        <div class="contact-label">INSTAGRAM</div>
+
+                    </a>
+
+                    <a class="contact-link" href="https://github.com/yourusername" target="_blank" rel="noopener">
+
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#000000" d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49
+                                0-.24-.01-1.03-.01-1.87-2.78.61-3.37-1.21-3.37-1.21-.46-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62
+                                1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.1 2.91.84.09-.66.35-1.1.63-1.35
+                                -2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7
+                                0 0 .84-.27 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7
+                                .64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9
+                                0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2z"/>
+                        </svg>
+
+                        <div class="contact-label">GITHUB</div>
+
+                    </a>
+
+                    <a class="contact-link" href="mailto:prakasharushi113@gmail.com">
+
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="#000000" stroke-width="2"/>
+                            <path d="M3 6l9 7 9-7" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <div class="contact-label">MAIL</div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             SKILLS WINDOW
+        =============================== -->
+
+        <div class="about-window" id="skillsWindow">
+
+            <div class="title-bar">
+
+                <div class="title-text">
+                    SKILLS
+                </div>
+
+                <div class="window-controls">
+
+                    <button class="window-btn" data-action="minimize" type="button" aria-label="Minimize">—</button>
+                    <button class="window-btn" data-action="maximize" type="button" aria-label="Maximize">□</button>
+                    <button class="window-btn" data-action="close" type="button" aria-label="Close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <div class="skills-panel">
+
+                    <div class="skill-category">
+
+                        <div class="skill-category-title cat-hardware">
+                            EMBEDDED &amp; HARDWARE
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">Arduino / ESP32 (C++)</div>
+                            <div class="skill-bar cat-hardware">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">Raspberry Pi</div>
+                            <div class="skill-bar cat-hardware">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">Circuit Design</div>
+                            <div class="skill-bar cat-hardware">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">Sensors &amp; Instrumentation</div>
+                            <div class="skill-bar cat-hardware">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">Serial Comm (SPI / RS-485)</div>
+                            <div class="skill-bar cat-hardware">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="skill-category">
+
+                        <div class="skill-category-title cat-software">
+                            PROGRAMMING &amp; SOFTWARE
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">C / C++</div>
+                            <div class="skill-bar cat-software">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar cat-software">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">JavaScript / Web Dev</div>
+                            <div class="skill-bar cat-software">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">Kotlin (Android Studio)</div>
+                            <div class="skill-bar cat-software">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">React / Node.js</div>
+                            <div class="skill-bar cat-software">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">Firebase Realtime DB</div>
+                            <div class="skill-bar cat-software">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="skill-category">
+
+                        <div class="skill-category-title cat-data">
+                            DATA, ML &amp; DESIGN
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">Machine Learning</div>
+                            <div class="skill-bar cat-data">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">MATLAB / Simulink</div>
+                            <div class="skill-bar cat-data">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">Data Visualization</div>
+                            <div class="skill-bar cat-data">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row">
+                            <div class="skill-name">Pixel Art / Graphics</div>
+                            <div class="skill-bar cat-data">
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block filled"></div>
+                                <div class="skill-block"></div>
+                                <div class="skill-block"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="hobbies-section">
+
+                        <div class="skill-category-title cat-hobby">
+                            HOBBIES &amp; INTERESTS
+                        </div>
+
+                        <div class="hobby-writing">
+                            WRITING
+                        </div>
+
+                        <div class="hobby-list">
+                            Reading &nbsp;•&nbsp; Exploring New Technologies
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             CAMERA WINDOW
+        =============================== -->
+
+        <div class="about-window" id="cameraWindow">
+
+            <div class="title-bar">
+
+                <div class="title-text">
+                    CAMERA
+                </div>
+
+                <div class="window-controls">
+
+                    <button class="window-btn" data-action="minimize" type="button" aria-label="Minimize">—</button>
+                    <button class="window-btn" data-action="maximize" type="button" aria-label="Maximize">□</button>
+                    <button class="window-btn" data-action="close" type="button" aria-label="Close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content">
+
+                <div class="camera-app">
+
+                    <div class="camera-viewport" id="cameraViewport">
+
+                        <video id="cameraVideo" autoplay playsinline muted></video>
+
+                        <canvas id="cameraCanvas"></canvas>
+
+                        <img id="cameraPhoto" alt="Captured photo">
+
+                        <div class="camera-scanlines"></div>
+
+                    </div>
+
+                    <div class="camera-status" id="cameraStatus">
+                        DOUBLE-CLICK THE CAMERA ICON TO START
+                    </div>
+
+                    <div class="camera-controls">
+
+                        <button class="camera-btn" id="captureBtn" type="button">
+                            CAPTURE
+                        </button>
+
+                        <button class="camera-btn" id="retakeBtn" type="button">
+                            RETAKE
+                        </button>
+
+                        <a class="camera-btn" id="downloadBtn" download="retro-photo.png">
+                            SAVE
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             TERMINAL WINDOW
+        =============================== -->
+
+        <div class="about-window terminal-window" id="terminalWindow">
+
+            <div class="title-bar">
+
+                <div class="title-text">
+                    TERMINAL
+                </div>
+
+                <div class="window-controls">
+
+                    <button class="window-btn" data-action="minimize" type="button" aria-label="Minimize">—</button>
+                    <button class="window-btn" data-action="maximize" type="button" aria-label="Maximize">□</button>
+                    <button class="window-btn" data-action="close" type="button" aria-label="Close">×</button>
+
+                </div>
+
+            </div>
+
+            <div class="window-content terminal-content">
+
+                <div class="terminal-output" id="terminalOutput"></div>
+
+                <div class="terminal-input-line">
+                    <span class="terminal-prompt">ARUSHI@DESKTOP:~$</span>
+                    <input type="text" class="terminal-input" id="terminalInput" autocomplete="off" spellcheck="false">
+                    <span class="terminal-cursor" id="terminalCursor">█</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             SHUT DOWN CONFIRMATION DIALOG
+        =============================== -->
+
+        <div class="shutdown-overlay" id="shutdownOverlay">
+
+            <div class="shutdown-dialog" id="shutdownDialog">
+
+                <div class="title-bar">
+
+                    <div class="title-text">
+                        SHUT DOWN
+                    </div>
+
+                    <div class="window-controls">
+                        <button class="window-btn" id="shutdownCloseBtn" type="button" aria-label="Close">×</button>
+                    </div>
+
+                </div>
+
+                <div class="shutdown-body">
+
+                    <p>
+                        This desktop only exists inside this browser tab.
+                    </p>
+
+                    <p>
+                        Shutting it down would just mean closing the page —
+                        so let's not do that. :)
+                    </p>
+
+                    <div class="shutdown-actions">
+                        <button class="shutdown-btn" id="shutdownOkBtn" type="button">
+                            OK, STAYING
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             DESKTOP ICONS
+        =============================== -->
+
+        <!-- ABOUT ME -->
+        <div class="desktop-icon about-icon" id="aboutIcon">
+            <img src="Me.png" alt="About Me">
+            <div class="icon-name">ABOUT ME</div>
+        </div>
+
+        <!-- MY PROJECTS -->
+        <div class="desktop-icon projects-icon" id="projectsIcon">
+            <img src="files.png" alt="My Projects">
+            <div class="icon-name">MY PROJECTS</div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="desktop-icon skills-icon" id="skillsIcon">
+            <img src="Skills.png" alt="Skills">
+            <div class="icon-name">SKILLS</div>
+        </div>
+
+        <!-- CONTACT ME -->
+        <div class="desktop-icon contact-icon" id="contactIcon">
+            <img src="contact.png" alt="Contact Me">
+            <div class="icon-name">CONTACT ME</div>
+        </div>
+
+        <!-- CAMERA -->
+        <div class="desktop-icon camera-icon" id="cameraIcon">
+            <img src="camera.png" alt="Camera">
+            <div class="icon-name">CAMERA</div>
+        </div>
+
+    </main>
+
+
+    <!-- ==============================
+         TASKBAR
+    =============================== -->
+
+    <footer class="taskbar">
+
+        <!-- ==============================
+             START MENU
+        =============================== -->
+
+        <div class="start-menu" id="startMenu">
+
+            <div class="start-menu-header">
+                ARUSHI OS
+            </div>
+
+            <div class="start-menu-items">
+
+                <button class="start-menu-item" id="menuAbout" type="button">ABOUT ME</button>
+                <button class="start-menu-item" id="menuProjects" type="button">MY PROJECTS</button>
+                <button class="start-menu-item" id="menuGames" type="button">RETRO GAMES</button>
+                <button class="start-menu-item" id="menuSkills" type="button">SKILLS</button>
+                <button class="start-menu-item" id="menuCamera" type="button">CAMERA</button>
+                <button class="start-menu-item" id="menuTerminal" type="button">TERMINAL</button>
+
+            </div>
+
+            <div class="start-menu-divider"></div>
+
+            <button class="start-menu-item start-menu-shutdown" id="menuShutdown" type="button">
+                ⏻ SHUT DOWN
+            </button>
+
+        </div>
+
+        <div class="taskbar-content">
+
+            <!-- ONLY ONE START BUTTON -->
+
+            <button
+                class="start-button"
+                type="button">
+
+                START
+
+            </button>
+
+
+            <!-- TASKBAR WINDOW BUTTONS -->
+
+            <button class="task-window-button" id="aboutTaskButton" type="button">ABOUT ME</button>
+            <button class="task-window-button" id="projectsTaskButton" type="button">MY PROJECTS</button>
+            <button class="task-window-button" id="skillsTaskButton" type="button">SKILLS</button>
+            <button class="task-window-button" id="retroTaskButton" type="button">RETRO GAMES</button>
+            <button class="task-window-button" id="aeroTaskButton" type="button">AERO FLAPPY</button>
+            <button class="task-window-button" id="bubblegumTaskButton" type="button">BUBBLEGUM BITCH RUN</button>
+            <button class="task-window-button" id="deskTaskButton" type="button">DESK COMPANION</button>
+            <button class="task-window-button" id="agriTaskButton" type="button">SMART AGRICULTURE</button>
+            <button class="task-window-button" id="othersTaskButton" type="button">OTHERS</button>
+            <button class="task-window-button" id="contactTaskButton" type="button">CONTACT ME</button>
+            <button class="task-window-button" id="cameraTaskButton" type="button">CAMERA</button>
+            <button class="task-window-button" id="terminalTaskButton" type="button">TERMINAL</button>
+
+            <!-- CLOCK -->
+
+            <div class="taskbar-clock" id="taskbarClock">
+                00:00
+            </div>
+
+        </div>
+
+        <!-- TASKBAR CLOCK -->
+
+        <div class="taskbar-clock" id="taskbarClock">--:--</div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
